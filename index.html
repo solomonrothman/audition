@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sol Roth's The Audition Movie</title>
+    <meta name="description" content="Sol Roth is put through the ultimate acting audition, performing back to back parts spanning genres, characters and stories across the full gamete of human emotion." >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <!-- Normlize Broswer Behavior https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" type="text/css" href="css/axiom.css" media="screen"/>
+    <style>
+        .hd-3col-ft {
+            display: grid;
+            /*grid-template-columns: repeat(12, 1fr);
+            /* grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)*/
+            grid-auto-rows: auto 1fr auto;
+            grid-template-areas:
+                "hd hd hd hd hd hd hd hd hd hd hd hd"
+                "col1 col1 col1 col2 col2 col2 col2 col2 col2 col2 col3 col3"
+                "ft ft ft ft ft ft ft ft ft ft ft ft";
+            height: 100vh;
+            /** width: 100vw; */
+            grid-gap: 1rem;
+        }
+
+        .hd-2col-ft{
+
+        }
+
+        .hd-1col-ft{
+
+        }
+
+        .header, header {
+            grid-area: hd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer, footer {
+            grid-area: ft;
+        }
+
+        main, .content {
+            grid-area: col2;
+        }
+
+        .col1, .hd-3col-ft aside:first-of-type {
+            grid-area: col1;
+        }
+
+        .col3, .hd-3col-ft aside:last-of-type{
+            grid-area: col3;
+        }
+
+        .g-unset{
+            grid-area: unset;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+
+        .hd-3col-ft  > div.overlay {
+            z-index: 10;
+            grid-column: col2-start / col3-end;
+            grid-row: hd-start / ft-end;
+            border: 4px solid rgb(92,148,13);
+            background-color: rgba(92,148,13,.4);
+            color: rgb(92,148,13);
+            font-size: 150%;
+        }
+    </style>
+
+    <!--<script src="//kit.fontawesome.com/ff90df295a.js" crossorigin="anonymous"></script>-->
+    <!-- <script src="./js/axiom.js"  type="module"></script> -->
+
+</head>
+<body>
+
+<div class="hd-1col-ft">
+    <header>
+            <span>
+            <h1>Sol Roth's The Audition<span> A man, a camera, and a ticketing clock.</span></h1>
+                 <p>Sol Roth is put through the ultimate acting audition, performing back to back parts spanning genres, characters and stories across the full gamete of human emotion. <strong>UPDATE 2020 </strong> - <em>This movie is pending an international release.</em> For all inquires e-mail <a href="mailto:solomonrothman@gmail.com">Sol Roth</a></p>
+            </span>
+    </header>
+    <main>
+        <article>
+          <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/bhXYTFUfxR8' frameborder='0' allowfullscreen></iframe></div>
+        </article>
+    </main>
+    <footer>
+        Copyright 2020 Sol Roth.
+    </footer>
+</div>
+
+</body>
+</html>
